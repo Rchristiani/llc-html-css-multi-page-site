@@ -126,9 +126,8 @@ footer {
 	img {
 		max-width: 100%;
 	}
-
 	&:target {
-		overflow: scroll;
+		overflow: auto;
 	}
 	&.js-fiddle > iframe:only-of-type {
 		position: static;
@@ -148,6 +147,8 @@ footer {
 /* vertical align heading */
 .slide.title {
 	transform-style: preserve-3d;
+	padding-left: 8%;
+	padding-right: 8%;
 
 	h1, h2 {
 		position: relative;
@@ -183,6 +184,16 @@ textarea.snippet {
 	margin-bottom: 15px;
 	font-family: Monaco, Andale Mono, monospace;
 }
+.edit {
+	float: right;
+	border: 1px solid #ccc;
+	font-size: 14px;
+	padding: 2px 7px;
+	position: relative;
+	bottom: -33px;
+	right: 8px;
+}
+
 
 /* table styles */
 table {
@@ -193,6 +204,7 @@ table {
 		width: 100%;
 	}
 }
+
 
 /* Creates border for slide examples */
 .example {
@@ -283,4 +295,9 @@ table {
 	background: rgba(255, 255, 255, .9);
 	font-size: 18px;
 	margin: 0;
+	max-height: inherit;
+
+	p {
+		margin-top: 0;
+	}
 }
